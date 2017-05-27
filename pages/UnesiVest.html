@@ -1,0 +1,78 @@
+<html><head><!-- meta ignored --><link rel="stylesheet" type="text/css" href="../css/site.css"></link><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></head><body>
+
+<div id="wrapper">
+
+    <?php
+		include '../php/Meni.php';
+	?>
+
+
+    <div id="addNewsDiv">
+
+	    <h1 style="margin-top: 50px">Unesi vest</h1>
+
+	    <form>
+	    	<p class="registerFormP">
+				<label>
+					Kategorija
+					<select class="categorySelect">
+						<option value="Ekonomija">Ekonomija</option>
+  						<option value="Politika">Politika</option>
+  						<option value="Sport">Sport</option>
+  						<option value="Kultura">Kultura</option>
+					</select>
+				</label>
+			</p>
+
+			<p class="registerFormP">
+				<label>
+					Podkategorija
+					<select class="categorySelect">
+						<option value="Privreda">Privreda</option>
+  						<option value="Finansije">Finansije</option>
+  						<option value="Biznis">Biznis</option>
+  						<option value="Domaća">Domaća</option>
+  						<option value="Regionalna">Regionalna</option>
+  						<option value="Svet">Svet</option>
+  						<option value="Fudbal">Fudbal</option>
+  						<option value="Košarka">Košarka</option>
+  						<option value="Atletika">Atletika</option>
+  						<option value="Film">Film</option>
+  						<option value="Pozorište">Pozorište</option>
+  						<option value="Slikarstvo">Slikarstvo</option>
+  						<option value="Muzika">Muzika</option>
+					</select>
+				</label>
+			</p>
+
+			<p class="registerFormP">
+				<label>
+					Upload-uj sliku
+					<input type="file" name="uploadSlike" class="categorySelect">
+				</label>
+			</p>
+
+		</form>
+  <form id="registerForm" method="post" action="../php/UnesiVest.php">
+
+			
+		<div class="comments">
+	    	<p style="text-align: left;">Tekst vesti</p>
+			<input type="text" name="TEKST VESTI" placeholder="..." style="width:200%;height:200px">
+	    </div>
+
+		<div style="margin-top: 30px">
+			<a href="../Naslovna.html"><button style="float: left; height: 25px; width: 100px;">Unesi</button></a>
+			<a href="UlogujSe.html"><button style="float: right; height: 25px; width: 100px;">Otkazi</button></a>
+		</div>
+	
+ </form>
+
+	</div>
+
+
+</div>
+
+</body></html>
